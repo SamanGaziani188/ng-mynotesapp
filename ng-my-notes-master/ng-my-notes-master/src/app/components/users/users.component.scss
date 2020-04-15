@@ -1,0 +1,58 @@
+.main-div
+{
+    margin-left: 80px;
+}
+
+.user
+{
+    margin-bottom: 80px;
+    padding: 10px 20px;
+    //background-color: #0066ff;
+    float: left;
+    
+    width: 150px;
+    overflow: auto;
+    border-radius: 8px;
+    font-family: monospace;
+    transition: transform .2s;
+}
+
+img
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    width: 70px;
+    height: 70px;
+}
+
+.user:hover
+{
+    background-color: #ffffff;
+    animation: fadein 2s;
+    transform: scale(1.5);
+}
+
+@keyframes fadein 
+{
+    from { background-color: rgba($color: #0066ff, $alpha: 0.0); }
+    to   { background-color: rgba($color: #0066ff, $alpha: 0.7); }
+}
+
+h1
+{
+    margin-top: 40px;
+    margin-bottom: 50px;
+    color: #ffffff;
+    background-color: #0066ff;
+    text-align: center;
+    border-radius: 10px;
+}
+
+h5
+{
+    margin-top: 50px;
+    margin-left: 50px;
+    color: #0066ff;
+}

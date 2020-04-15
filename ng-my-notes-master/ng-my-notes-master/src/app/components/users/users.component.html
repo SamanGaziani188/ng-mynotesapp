@@ -1,0 +1,12 @@
+<h5>We are hosting a large community. Our top-most priority is to 
+  provide a flawless user experience.</h5>
+<h1 class="container">Our proud users.</h1>
+<div *ngFor="let user of users" class="main-div">
+  <div class="user">
+    <img src="../../../assets//img/user.png"> <br>
+    <strong>Name:</strong>{{user.firstName}} {{user.lastName}} <br>
+    <strong>Email:</strong> {{ user.userId }} <br>
+    <strong>Age:</strong> {{ user.age }} <br>
+    <strong>Profession:</strong> {{ user.profession }} <br>
+  </div> 
+</div>

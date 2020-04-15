@@ -1,0 +1,47 @@
+<div class="main-div container">
+    <div class="row">
+        <div class="side-text col-md-6">
+            <h1>Developer? Artist? Designer? Pilot? Engineer? Doctor?</h1><br>
+            <h2>Whichever profession you belong to, use <span style="font-family: 'Pacifico', serif;">MyNotes</span>
+                 to keep notes of your activities. </h2>
+        </div>
+
+        <div class="col-md-2">
+
+        </div>
+
+        <div class="login-div col-md-4">
+            <div class="form-group">
+                <form [formGroup]="registerForm">
+                    <label>First name</label>
+                    <input type="text" class="form-control form-elements" formControlName="firstName" placeholder="First name">
+
+                    <label>Last name</label>
+                    <input type="text" class="form-control form-elements" formControlName="lastName" placeholder="Last name">
+
+                    <label>Email</label>
+                    <input type="text" class="form-control form-elements" formControlName="userId" placeholder="Email">
+        
+                    <label>Password</label>
+                    <input type="password" class="form-control form-elements" formControlName="password" placeholder="Password">
+                    
+                    <label>Age</label>
+                    <input type="number" class="form-control form-elements" formControlName="age" placeholder="Age">
+
+                    <label>Profession</label>
+                    <input type="text" class="form-control form-elements" formControlName="profession" placeholder="Profession">
+
+                    <button type="submit" class="form-control buttons form-elements" (click)="registerUser()">Register</button>
+                </form>
+                
+            </div>
+            
+            <div style="text-align: center;">
+                Already have an account? <a routerLink="login">Login</a>
+            </div>
+            
+
+        </div>
+    </div>
+    
+</div>

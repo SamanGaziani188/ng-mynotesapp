@@ -1,0 +1,15 @@
+<div class="main-div border">
+  
+  <div class="list-items">
+    
+    <div class="item-div" *ngFor="let item of notesList; let i=index" (click)="setCurrentNote(i)" title="
+    Created On: {{item.createdOn}}">
+      {{item.noteText | limitTo : 15}}
+      <div class="date-div">
+          <!--Created: {{item.createdOn}}<br>-->
+          Last updated: {{item.updatedOn}}
+      </div>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,42 @@
+.main-div
+{
+    height: 500px;
+    text-align: left;
+}
+
+.list-items
+{
+    height: 500px;
+    overflow: auto;
+}
+
+.date-div
+{
+    font-size: 11px;
+    color: #0066ff;
+}
+
+.item-div
+{
+    background-color: #cce0ff;
+    border-bottom: 1px solid #dcdcdc;
+    font-size: 25px;
+    padding: 12px 15px;
+}
+
+.item-div:focus
+{
+    background-color: #cce0ff;
+}
+
+.item-div:hover
+{
+    background-color: #ffffff;
+    animation: fadein 1s;
+}
+
+@keyframes fadein {
+    from { opacity: 0.1; }
+    to   { opacity: 1; }
+}
+
