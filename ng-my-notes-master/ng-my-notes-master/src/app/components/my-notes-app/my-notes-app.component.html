@@ -1,0 +1,31 @@
+<div class="main-div container">
+  
+    <div class="my-notes-header row">
+        <h2 class="col-md-8" style="color: white;">{{ heading }}</h2>
+    
+        <a href="#" data-toggle="tooltip" data-placement="auto" title="Add image"><i class="fa fa-image fa-2x col-md-1" style="color: white;"></i></a>
+        <a (click)="openDeleteConfirmDialog()" data-toggle="tooltip" data-placement="auto" title="Delete"><i class="fa fa-trash fa-2x col-md-1" style="color: white;"></i></a>
+        <a (click)="saveNote()" data-toggle="tooltip" data-placement="auto" title="Save"><i class="fa fa-save fa-2x col-md-1" style="color: white;"></i></a>
+        <a (click)="newNote()" data-toggle="tooltip" data-placement="auto" title="New"><i class="fa fa-plus fa-2x col-md-1" style="color: white;"></i></a>  
+    </div>
+
+  <div class="row">
+
+    <div class="container">
+        
+      
+        <div class="row">
+          
+          <div class="col-md-4 h-75">
+            <mn-my-notes-list></mn-my-notes-list>
+          </div>
+      
+          <div class="col-md-8 h-75">
+            <mn-my-notes-editor></mn-my-notes-editor>
+          </div>
+        </div>
+      
+      </div>
+      
+  </div>
+</div>

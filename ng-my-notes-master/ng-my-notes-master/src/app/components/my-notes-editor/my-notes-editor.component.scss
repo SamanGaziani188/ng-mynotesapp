@@ -1,0 +1,20 @@
+.main-div
+{
+    height: 500px;
+    border-right: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc; 
+    text-align: left;
+    //background-color: red;
+    padding: 0px;
+}
+
+textarea
+{
+    background-color: white;
+    resize: none;
+    border-bottom: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+}

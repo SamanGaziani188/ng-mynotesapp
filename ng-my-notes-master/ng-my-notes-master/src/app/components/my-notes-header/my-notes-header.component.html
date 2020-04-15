@@ -1,0 +1,16 @@
+<div class="main-div container-fluid">
+  <div class="row">
+    <img src="../../assets/img/logo.png" alt="logo" class="img-responsive col-md-1">
+    <div class="heading-div col-md-9">
+      <h1>{{ heading }}</h1>
+    </div>
+
+
+    <a *ngIf="anchorState === false" (click)="login()" title="Login" class="col-md-1">Login</a>
+    <a *ngIf="anchorState === false" routerLink="register" title="Register" class="col-md-1">Register</a>
+
+    <a *ngIf="anchorState === true" (click)="logout()" title="Logout" class="col-md-1">Logout</a>
+  </div>
+  
+  
+</div>
